@@ -22,13 +22,14 @@ h1 {
 body{
     font-family: 'Manrope', sans-serif;
     background-color: var(--dark-blue);
+    overflow: hidden;
 }
 
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 97vh;
     overflow: hidden;
 }
 #Advice{
@@ -80,7 +81,15 @@ main{
         0px 0px 75px var(--neon-green) ;
     }
 }
-
+.attribution{
+    width: 100%;    
+    text-align: center;
+    font-size: 1.4rem;
+}
+.attribution a{
+    color: var(--neon-green);
+    text-decoration: none;
+}
 @media (max-width: 1024px) {
     #Advice{
         width: 30vw;
