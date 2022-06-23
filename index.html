@@ -8,16 +8,35 @@
   
   <title>Frontend Mentor | Advice generator app</title>
 
-  <link rel="stylesheet" href="app.css">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
 
-  d
+  <main>
+    <div id="Advice">
+      <span id="advice_no"></span>
+      <span id="advice_text"></span>
+      <div class="divider">
+        <img src="./images/pattern-divider-desktop.svg" alt="Divider" class="dekstop-divider">
+        <img src="./images/pattern-divider-desktop.svg" alt="Divider" class="movile-divider">
+      </div>
+      <a href="javascript:init.advice.get();" class="btn">
+        <img src="./images/icon-dice.svg" alt="">        
+      </a>
+    </div>
+  </main>
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="./js/app.js"></script>
+  <script> init.advice.get();</script>
 </body>
 </html>
